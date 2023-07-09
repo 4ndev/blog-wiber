@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -32,6 +33,7 @@ class PostController extends Controller
     {
         $post = new Post();
         $post->title = $request->title;
+        $post->slug = Str::slug($request->title, '-');
         $post->body = $request->body;
         $post->save();
         return redirect()->route('posts.index');
@@ -40,9 +42,8 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        $post = Post::find($id);
         return view('posts.show', compact('post'));
     }
 

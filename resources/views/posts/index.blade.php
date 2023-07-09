@@ -129,7 +129,7 @@
 											{{ $post->created_at }}
 										</td>
 										<td class="px-6 py-4 text-right">
-											<a href="{{ route('posts.show', $post->id)}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver</a>
+											<a href="{{ route('posts.show', $post)}}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver</a>
 											<a href="{{ route('posts.delete', $post->id)}}" class="font-medium text-red-600 dark:text-red-500 hover:underline">Borrar</a>
 										</td>
 									</tr>
