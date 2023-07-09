@@ -1,4 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/4ndev/blog-wiber/blob/main/public/img/wiber.png?raw=true" width="400" alt="Laravel Logo"></a></p>
+<p align="center">Prueba técnica para Wiber</p>
+<p align="center">Este proyecto está hecho bajo windows 11 con WSL2 y docker.</p>
 
 ## Instalación con docker
 
