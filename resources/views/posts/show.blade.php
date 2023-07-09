@@ -1,5 +1,6 @@
 @extends('layouts.landing')
 @section('title', 'Wibe | ' . $post->title)
+@section('description', $post->description)
 @section('content-posts')
 	<article class="max-w-5xl m-auto">
 		<header class="mb-10">
@@ -8,8 +9,8 @@
 		<section class="max-w-3xl m-auto">
 			<img 
 				class="rounded-t-lg mb-10" 
-				src="https://astro-theme-creek.netlify.app/images/introducing-astro.jpg" 
-				alt=""
+				src="{{ asset('/img/wiber-car.webp') }}" 
+				alt="Wiber car"
 				style="view-transition-name: post-{{ $post->id }}"
 			/>
 			<p>{{$post->body}}</p>

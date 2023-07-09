@@ -11,8 +11,8 @@
                     <a href="{{route('posts.show', $post)}}">
                         <img 
                             class="rounded-t-lg" 
-                            src="https://astro-theme-creek.netlify.app/images/introducing-astro.jpg" 
-                            alt=""
+                            src="{{ asset('/img/wiber-car.webp') }}" 
+                            alt="Wiber car"
                             style="view-transition-name: post-{{ $post->id }}" 
                         />
                     </a>
